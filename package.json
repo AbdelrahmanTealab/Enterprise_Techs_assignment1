@@ -1,0 +1,23 @@
+{
+  "name": "assignment1",
+  "version": "1.0.0",
+  "description": "enterprise techs assignment 1",
+  "main": "index.js",
+  "scripts": {
+    "test": "grunt validate --verbose",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "/Users/abdelrahmantealab/Documents/Work\\ _\\ Study/centennial\\ college/semester\\ 1/Enterprise\\ Techs/Assignment1 "
+  },
+  "author": "Abdelrahman Tealab",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "pm2": "^4.5.0",
+    "seneca": "^3.22.0",
+    "seneca-web": "^2.2.1",
+    "seneca-web-adapter-express": "^1.2.1"
+  }
+}
