@@ -7,14 +7,21 @@ const products = JSON.parse(fs.readFileSync('products.json'));
 console.log(products);
 console.log(products[0].Source)
 
-app.get('/', (requ,resp)=>{ resp.send('Hi !! you got something!'); } );
 app.get('/products', (requ,resp)=>{  
     resp.send(products);
-    console.log(requ.query);
 });
-app.get('/products/:id',(requ,resp)=>{  
+app.get('/products/:ID',(requ,resp)=>{  
     console.log(requ.params);
-    resp.send("hello "+requ.params.id);
+
+    for(var product in products) {
+        if (products[product].ID == requ.params.ID) {
+            resp.send("here's your product !!\n"+products[product]);
+        }
+        else{
+            console.log("sorry :( couldn't find your product");
+        }
+
+     }
  }   );
 
 app.listen(3009, ()=> console.log('server now listening at port 3009'))
