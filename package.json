@@ -16,8 +16,11 @@
   "dependencies": {
     "express": "^4.17.1",
     "pm2": "^4.5.0",
+    "restify": "^8.5.1",
+    "save": "^2.4.0",
     "seneca": "^3.22.0",
     "seneca-web": "^2.2.1",
-    "seneca-web-adapter-express": "^1.2.1"
+    "seneca-web-adapter-express": "^1.2.1",
+    "users": "^2.0.0"
   }
 }
